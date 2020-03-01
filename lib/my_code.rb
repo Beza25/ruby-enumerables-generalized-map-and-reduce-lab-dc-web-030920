@@ -20,11 +20,13 @@ map(source_array)
   
 
 
-# def reduce(source_array, starting_value = 0)
+def reduce(source_array, starting_value = 0)
   index = 0 
-  total = 0 
-  while index < source_array.length 
+  total = starting_value 
+  while index < source_array.length do
+    yeild(toatl += source_array[index])
   index += 1 
+  end
+  total
 end 
   
-# end
