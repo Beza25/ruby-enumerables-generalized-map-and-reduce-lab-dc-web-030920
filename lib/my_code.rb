@@ -15,11 +15,12 @@ end
 def reduce(source_array, starting_value = nil)
   index = 0 
   # total = starting_value
-  if starting_value == nil
+  if starting_value
+    total = starting_value
+  else
     total = source_array[0]
     index = 1 
-  else
-    total = starting_value
+    
   end
   while index < source_array.length do
     yield(total, source_array[index])
