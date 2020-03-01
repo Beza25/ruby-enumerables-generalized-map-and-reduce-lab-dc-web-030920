@@ -11,12 +11,7 @@ def map(source_array)
   end
   new_arr
 end
-
-# map(source_array)
-# # map(source_array) { |element| element * -1 }
-
-# # map(source_array) { |element| element * 2 }
-# # map(source_array) { |element| element * element }
+map(source_array) { |element| element * element }
   
 
 
