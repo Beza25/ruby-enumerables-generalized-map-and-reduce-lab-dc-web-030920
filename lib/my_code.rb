@@ -17,6 +17,7 @@ def reduce(source_array, starting_value = nil)
   # total = starting_value
   if starting_value
     total = starting_value
+    index = 0 
   else
     total = source_array[0]
     index = 1 
