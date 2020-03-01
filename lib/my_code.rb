@@ -1,6 +1,10 @@
 # Your Code Here
 
 def map(source_array) 
+  
+  source_array.map { |i|
+  
+  }
   index = 0 
   while index < source_array.length do 
     yield(source_array[index])
