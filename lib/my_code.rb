@@ -11,13 +11,14 @@ def map(source_array)
   end
   new_arr
 end
-map(source_array) { |element| element * element }
-  
 
-
-def reduce(source_array, starting_value = 0)
+def reduce(source_array, starting_value = nil)
   index = 0 
-  total = starting_value 
+  if starting_value == nil
+    total = source_array[0]
+  else
+    total = starting_value
+  end
   while index < source_array.length do
     yeild(toatl += source_array[index])
   index += 1 
