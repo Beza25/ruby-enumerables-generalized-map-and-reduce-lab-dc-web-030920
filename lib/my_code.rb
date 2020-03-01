@@ -2,15 +2,15 @@
 
 def map(source_array) 
   
-  source_array.map { |i|
   
-  }
   index = 0 
-  while index < source_array.length do 
-    yield(source_array[index])
+  new_arr = []
+  while index < source_array.length do
+    new_arr << source_array[index]
+    yield()
     index += 1 
   end
-  source_array
+  new_arr
 end
 
 map(source_array) { |element| element * -1 }
