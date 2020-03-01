@@ -12,9 +12,9 @@ def map(source_array)
   new_arr
 end
 
-def reduce(source_array, starting_value = 0)
+def reduce(source_array, starting_value = nill)
   index = 0 
-  total = starting_value
+  # total = starting_value
   if starting_value == nil
     total = source_array[0]
     index = 1 
